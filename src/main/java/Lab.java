@@ -15,7 +15,7 @@ public class Lab {
      * @return the length of arr.
      */
     public int getLengthOfArray(int[] arr){
-        return 0;
+        return arr.length;
     }
 
 
@@ -27,7 +27,7 @@ public class Lab {
      * @return the element at index n of arr.
      */
     public int getNthElementOfArray(int[] arr, int n){
-        return 0;
+        return arr[n];
     }
 
     /**
@@ -38,15 +38,18 @@ public class Lab {
      * @param val the value that we will assign to a spot in the array.
      * @return nothing. Because of pass-by-reference, any change to the array will be reflected across our java program.
      */
-    public void setNthElementOfArray(int[] arr, int n, int val){
-
+    public void setNthElementOfArray(int[] arr, int n, int val)
+    {
+            arr[n] = val;
     }
 
     /**
      * @param n the size of the array we wish to create
      * @return a new int array that can contain n elements.
      */
-    public int[] returnNewArraySizeN(int n){
-        return null;
+    public int[] returnNewArraySizeN(int n)
+    {
+        int [] myArray = new int [n];
+        return myArray;
     }
 }
